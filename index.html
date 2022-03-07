@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تعديل الصور</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- cool programming projects -->
+    <div class="main-container">
+        <div class="first-container">
+            <input type="text" id="search-box" placeholder="ادخل رابط الصورة">
+            <button id='search-btn' onclick="search_img()">بحث</button>
+        </div>
+
+        <div class="second-container">
+            <div class="control-menu">
+
+                <div class="box1">
+                    <label for="brightness-slider">السطوع </label>
+                    <input type="range" min="0" max="170" value='100' id="brightness-slider" oninput="updateImage()">
+                </div>
+                <div class="box2">
+                    <label for="contrast-slider">التباين </label>
+                    <input type="range" min="0" max="170" value='100' id="contrast-slider" oninput="updateImage()">
+                </div>
+                <div class="box3">
+                    <label for="hue-slider">اللون </label>
+                    <input type="range" min="0" max="360" value='0' id="hue-slider" oninput="updateImage()">
+                </div>
+                <div class="box4">
+                    <label for="blur-slider">الضبابيه </label>
+                    <input type="range" min="0" max="10" id="blur-slider" value='0' oninput="updateImage()">
+                </div>
+
+                <div class="box5">
+                    <label for="saturation-slider">تشبع الالوان </label>
+                    <input type="range" min="0" max="300" id="saturation-slider" value='100' oninput="updateImage()">
+                </div>
+                <div class="box6">
+                    <label for="sepia-slider">داكن </label>
+                    <input type="range" min="0" max="100" id="sepia-slider" value='0' oninput="updateImage()">
+                </div>
+
+
+            </div>
+            <div class="img-container">
+
+
+                <img src="img/bk3.jpg" alt="" id="img">
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
